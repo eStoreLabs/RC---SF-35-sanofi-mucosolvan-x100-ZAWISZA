@@ -1,0 +1,25 @@
+.contents-25-icon {
+    display:block;
+    width: 50%;
+    padding:5%;
+    margin: 1em auto auto;
+    aspect-ratio: 1;
+    border-radius: 2000px;
+}
+
+@media (min-width:576px) {
+    .contents-25-icon {
+        position: absolute;
+        margin:0;
+        padding:0;
+        right: 20px;
+        bottom: 20px;
+        width: 20%;
+    }
+}
+
+@media (min-width:992px) {
+    .contents-25-icon {
+        width: 10%;
+    }
+}
