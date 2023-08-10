@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+  }
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/MuseoSans-900.otf") format("opentype");
+  }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+@mixin img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}  
+
+$regular: 'Monsterat, sans-serif';
+$title: 'MuseoSans';
+$main-color: #004999;
+$main-dark: #00418d;
+$secondary-color: #e4022e;
+
+$text: #fff;
+$text-blue: #1f57a4;
+$text-black: #000;
+
+.fdb-block {
+  margin-top: 0 !important;
+  padding: 0 0 1.5rem 0 !important;
+}
+#es-rc.es-rc {
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  // color: $text;
+  background: #1f57a4;
+  .es-kv {
+    &__container {
+      padding: 0 !important;
+    }
+    &__title {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    &__text{
+      color: $text;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin-bottom: 10px !important;
+      font-size: 60px;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 0.8;
+      p{
+          // margin: 10px;
+          letter-spacing: 1px;
+      }
+      &--red{
+          background-color: $secondary-color;
+          font-size: 45px;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.8;
+        margin-left: 5px;
+    }
+      &--blue{
+          background-color: $main-color;
+          transform: rotate(-1.5deg);
+          line-height: 1.3;
+          margin-left: 20px;
+      }
+    }
+  }
+  .es-features {
+    &__title {
+      font-size: 22px !important;
+      color: $text-blue !important;
+    }
+    &__desc {
+      font-size: 16px !important;
+      color: $text-black !important;
+    }
+  }
+}
+
+.contents-25-icon {
+    display:block;
+    width: 50%;
+    padding:5%;
+    margin: 1em auto auto;
+    aspect-ratio: 1;
+    border-radius: 2000px;
+}
+
+@media (min-width:576px) {
+    .contents-25-icon {
+        position: absolute;
+        margin:0;
+        padding:0;
+        right: 20px;
+        bottom: 20px;
+        width: 20%;
+    }
+}
+
+@media (min-width:992px) {
+    .contents-25-icon {
+        width: 10%;
+    }
+}
