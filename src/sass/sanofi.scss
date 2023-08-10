@@ -32,7 +32,7 @@ body {
 $regular: 'Monsterat, sans-serif';
 $title: 'MuseoSans';
 $main-color: #004999;
-$main-dark: #00418d;
+$main-dark: #19428f;
 $secondary-color: #e4022e;
 
 $text: #fff;
@@ -88,7 +88,7 @@ $text-black: #000;
       &--middle{
         line-height: 0.8;
         margin-left: 5px;
-    }
+      }
       &--blue{
           background-color: $main-color;
           transform: rotate(-1.5deg);
@@ -98,13 +98,84 @@ $text-black: #000;
     }
   }
   .es-features {
+    &__box {
+      
+    }
     &__title {
       font-size: 22px !important;
       color: $text-blue !important;
+      max-width: 210px !important;
     }
     &__desc {
       font-size: 16px !important;
       color: $text-black !important;
+      max-width: 210px !important;
+    }
+  }
+  .es-description {
+    background-image: url('../images/description-bg.png');
+    &__title {
+      width: 100%;
+      text-align: center !important;
+    }
+    &__text{
+      text-align: center;
+      color: $text;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-1.5deg);
+      margin: 0 auto 10px !important;
+      font-size: 40px;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 0.8;
+      p{
+          // margin: 10px;
+          letter-spacing: 1px;
+      }
+      &--blue{
+        font-size: 30px;
+        background-color: $main-color;
+        transform: rotate(-3deg);
+        line-height: 1.3;
+        position: relative;
+        left: -40px;
+      }
+      &--middle{
+        line-height: 0.8;
+        position: relative;
+        left: 40px;
+      }
+    }
+    &__text1 {
+      font-size: 18px !important;
+      color: $text !important;
+    }
+    &__text2 {
+      font-size: 24px !important;
+      color: $text !important;
+      text-shadow: 0px 0px 50px $main-color !important;
+    }
+    &__box {
+      background: linear-gradient(45deg, rgba(49,117,182,1) 0%, rgba(26,69,145,1) 25%, rgba(26,69,145,1) 75%, rgba(49,117,182,1) 100%);
+      box-shadow: 2px 2px 5px 0px rgba(47, 47, 47, 1) !important;
+    }
+    &__subtitle {
+      color: $text !important;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin-bottom: 10px !important;
+      font-size: 24px !important;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 1.3;
+      margin: 0 auto 10px !important;
+      background-color: $secondary-color;
     }
   }
 }
