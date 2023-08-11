@@ -33,6 +33,7 @@ $regular: 'Monsterat, sans-serif';
 $title: 'MuseoSans';
 $main-color: #004999;
 $main-dark: #19428f;
+$main-light: #1b4a97;
 $secondary-color: #e4022e;
 
 $text: #fff;
@@ -221,7 +222,101 @@ $text-black: #000;
         line-height: 1.3;
       }
     }
-  }  
+  } 
+
+  .es-dose {
+    
+    background-color: $text-blue;
+    & table {
+      padding: 0 !important;
+      margin: 0 !important;
+      border-color: transparent !important;
+    }
+    &__odd {
+      background-color: $main-dark !important;
+    }
+    &__even {
+      background-color: $main-light !important;
+    }
+    &__box {
+      padding: 0 !important;
+      background-color: $main-dark;
+    }
+    &__subtitle {
+      color: $text !important;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin-bottom: 10px !important;
+      font-size: 35px !important;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 1.3;
+      margin: 0 auto 10px !important;
+      background-color: $secondary-color;
+    }
+    & td {
+      color: $text;
+      text-align: left;
+      border:none;
+    }
+  } 
+  .es-video {
+    margin: 0 auto 64px;
+    width: 100%;
+    position: relative;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    &__iframe {
+      border: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    &__text{
+      text-align: center;
+      color: $text-blue;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin: 0 auto 10px !important;
+      font-size: 35px;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 0.8;
+      p{
+          // margin: 10px;
+          letter-spacing: 1px;
+      }
+      &--red{
+        color: $text;
+        padding: 0 10px !important;
+        background-color: $secondary-color;
+      }
+      &--1 {
+        position: relative;
+        left: -15%;
+        line-height: 1.3;
+      }
+      &--2 {
+        font-size: 45px !important;
+        transform: rotate(-1.5deg);
+        line-height: 0.5;
+      }
+    }
+  }
 }
 
 .contents-25-icon {
