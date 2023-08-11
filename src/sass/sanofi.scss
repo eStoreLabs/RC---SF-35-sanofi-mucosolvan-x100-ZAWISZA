@@ -58,6 +58,18 @@ $text-black: #000;
   .es-mobile-break {
     display: block;
   }
+  .es-image-box {
+    overflow: hidden;
+  }
+  .es-zoomin {
+    opacity: 1;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
   .es-kv {
     min-height: 400px;
     &__container {
