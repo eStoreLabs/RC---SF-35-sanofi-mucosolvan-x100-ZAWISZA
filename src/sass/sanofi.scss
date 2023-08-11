@@ -223,7 +223,6 @@ $text-black: #000;
       }
     }
   } 
-
   .es-dose {
     
     background-color: $text-blue;
@@ -315,6 +314,58 @@ $text-black: #000;
         transform: rotate(-1.5deg);
         line-height: 0.5;
       }
+    }
+  }
+  .es-cross {
+
+  }
+  .es-articles {
+    &__title {
+      width: 100%;
+      text-align: center !important;
+    }
+    &__text{
+      text-align: center;
+      color: $text;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin: 0 auto 10px !important;
+      font-size: 40px;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 1.3;
+      background-color: $secondary-color;
+      p{
+          letter-spacing: 1px;
+      }
+    }
+    &__text1 {
+      font-size: 18px !important;
+      color: $text-blue !important;
+    }
+    &__box {
+
+    }
+    &__subtitle {
+      font-size: 18px !important;
+      color: $text-blue !important;
+      font-weight: 500;
+    }
+    &__button {
+      text-decoration: none;
+      color: $text !important;
+      width: max-content;
+      padding: 5px 10px !important;
+      font-weight: 500;
+      margin-bottom: 10px !important;
+      font-size: 20px !important;
+      border-radius: 5px;
+      line-height: 1.3;
+      margin: 0 auto 10px !important;
+      background-color: $secondary-color;
     }
   }
 }
