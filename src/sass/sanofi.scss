@@ -29,6 +29,31 @@ body {
   margin: 0 auto;
 }  
 
+@keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+   
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+   
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+   
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+   
+  }
+}
 $regular: 'Monsterat, sans-serif';
 $title: 'MuseoSans';
 $main-color: #004999;
@@ -79,6 +104,7 @@ $text-black: #000;
       position: absolute;
       top: 30px;
       left: 30px;
+      animation: slideleft 1s ease forwards;
     }
     &__text{
       color: $text;
@@ -118,6 +144,7 @@ $text-black: #000;
       position: absolute;
       bottom: -30%;
       right: 5%;
+      animation: slideright 1s ease forwards;
     }
     &__background {
       width: 100%;
@@ -129,6 +156,7 @@ $text-black: #000;
       position: absolute;
       bottom:-29%;
       left: 15%;
+      animation: slideleft 1s ease forwards;
     }
     &__text1{
       color: $text;
@@ -190,6 +218,7 @@ $text-black: #000;
     &__title {
       width: 100%;
       text-align: center !important;
+      animation: slideleft 1s ease forwards;
     }
     &__text{
       text-align: center;
@@ -255,6 +284,7 @@ $text-black: #000;
     &__title {
       width: 100%;
       text-align: center !important;
+      animation: slideleft 1s ease forwards;
     }
     &__text{
       text-align: center;
@@ -353,6 +383,9 @@ $text-black: #000;
       height: 100%;
       z-index: 1;
     }
+    &__title {
+      animation: slideleft 1s ease forwards;
+    }
     &__text{
       text-align: center;
       color: $text-blue;
@@ -393,6 +426,9 @@ $text-black: #000;
       width: 100%;
       text-align: center !important;
     }
+    &__title {
+      animation: slideleft 1s ease forwards;
+    }
     &__text{
       text-align: center;
       color: $text;
@@ -419,7 +455,7 @@ $text-black: #000;
       width: max-content;
       text-align: left;
       font-size: 20px;
-      
+      animation: slideleft 1s ease forwards;
       font-family: $title;
       & span {
         line-height: 1.3;
@@ -453,6 +489,9 @@ $text-black: #000;
     &__title {
       width: 100%;
       text-align: center !important;
+    }
+    &__title {
+      animation: slideleft 1s ease forwards;
     }
     &__text{
       text-align: center;
