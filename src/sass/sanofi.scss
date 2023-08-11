@@ -56,6 +56,7 @@ $text-black: #000;
   // color: $text;
   background: #1f57a4;
   .es-kv {
+    min-height: 400px;
     &__container {
       padding: 0 !important;
     }
@@ -72,17 +73,17 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin-bottom: 10px !important;
-      font-size: 60px;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
+      font-size: 20px;
       p{
           // margin: 10px;
           letter-spacing: 1px;
       }
       &--red{
           background-color: $secondary-color;
-          font-size: 45px;
+          font-size: 15px;
           margin: 0;
           line-height: 1.3;
       }
@@ -95,6 +96,62 @@ $text-black: #000;
           transform: rotate(-1.5deg);
           line-height: 1.3;
           margin-left: 20px;
+      }
+    }
+    &__packshot {
+      width: 35%;
+      position: absolute;
+      bottom: -30%;
+      right: 5%;
+    }
+    &__background {
+      width: 100%;
+      position: absolute;
+      bottom: -30%;
+      right: 0;
+    }
+    &__subtitle {
+      position: absolute;
+      bottom:-29%;
+      left: 15%;
+    }
+    &__text1{
+      color: $text;
+      width: max-content;
+      padding: 0 10px !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      margin-bottom: 10px !important;
+      font-size: 15px;
+      border-radius: 5px;
+      font-family: $title;
+      line-height: 0.8;
+      & sup {
+        font-size: 8px !important;
+        position: relative;
+        top: -4px !important;
+      }
+      & p {
+          // margin: 10px;
+          letter-spacing: 1px;
+      }
+      &--red{
+          background-color: $secondary-color;
+          font-size: 12px;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.5;
+        margin-left: 15px;
+      }
+      &--blue{
+          background-color: $main-color;
+          transform: rotate(-1.5deg);
+          font-size: 12px;
+          line-height: 1.3;
+          margin-left: 40px;
       }
     }
   }
@@ -396,19 +453,201 @@ $text-black: #000;
     border-radius: 2000px;
 }
 
-@media (min-width:576px) {
-    .contents-25-icon {
-        position: absolute;
-        margin:0;
-        padding:0;
-        right: 20px;
-        bottom: 20px;
-        width: 20%;
+@media (min-width:440px) {
+  .es-kv {
+    min-height: 500px !important;
+    &__text{
+      font-size: 25px !important;
+      &--red{
+          font-size: 20px  !important;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.8;
+        margin-left: 5px;
+      }
+      &--blue{
+          line-height: 1.3;
+          margin-left: 20px;
+      }
     }
+    &__subtitle {
+      bottom: -31% !important;
+      left: 10% !important;
+    }
+    &__text1{
+      font-size: 20px  !important;
+      line-height: 0.8;
+      & sup {
+        font-size: 10px !important;
+        top: -26px !important;
+      }
+      &--red{
+          font-size: 15px  !important;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.5;
+      }
+      &--blue{
+          font-size: 15px;
+          line-height: 1.3;
+      }
+    }
+  } 
+}
+
+@media (min-width:576px) {
+  .es-kv {
+    min-height: 500px !important;
+    &__text{
+      font-size: 25px !important;
+      &--red{
+          font-size: 20px  !important;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.8;
+        margin-left: 5px;
+      }
+      &--blue{
+          line-height: 1.3;
+          margin-left: 20px;
+      }
+    }
+    &__subtitle {
+      bottom: -29% !important;
+      left: 10% !important;
+    }
+    &__text1{
+      font-size: 20px  !important;
+      line-height: 0.8;
+      & sup {
+        font-size: 10px !important;
+        top: -26px !important;
+      }
+      &--red{
+          font-size: 15px  !important;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.5;
+      }
+      &--blue{
+          font-size: 15px;
+          line-height: 1.3;
+      }
+    }
+  } 
+}
+
+@media (min-width:768px) {
+  .es-kv {
+    min-height: 600px !important;
+    &__text{
+      font-size: 35px !important;
+      &--red{
+          font-size: 30px  !important;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.8;
+        margin-left: 5px;
+      }
+      &--blue{
+          line-height: 1.3;
+          margin-left: 20px;
+      }
+    }
+    &__subtitle {
+      bottom: -26% !important;
+      left: 15% !important;
+    }
+    &__text1{
+      font-size: 25px  !important;
+      line-height: 0.8;
+      & sup {
+        font-size: 10px !important;
+        top: -26px !important;
+      }
+      &--red{
+          font-size: 20px  !important;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.5;
+      }
+      &--blue{
+          font-size: 20px;
+          line-height: 1.3;
+      }
+    }
+  } 
 }
 
 @media (min-width:992px) {
-    .contents-25-icon {
+  .es-kv {
+    &__title {
+      top: 30px;
+      left: 30px;
+    }
+    &__text{
+      font-size: 60px !important;
+      &--red{
+          font-size: 45px !important;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.8;
+        margin-left: 5px;
+      }
+      &--blue{
+          line-height: 1.3;
+          margin-left: 20px;
+      }
+    }
+    &__packshot {
+      width: 280px  !important;
+      bottom: 0  !important;
+      right: 5%  !important;
+    }
+    &__background {
+      bottom: 0 !important;
+      right: 0  !important;
+    }
+    &__subtitle {
+      bottom: 25px !important;
+      left: 80px !important;
+    }
+    &__text1{
+      font-size: 45px !important;
+      line-height: 0.8;
+      & sup {
+        font-size: 12px !important;
+        position: relative;
+        top: -26px !important;
+      }
+      &--red{
+          font-size: 35px !important;
+          margin: 0;
+          line-height: 1.3;
+      }
+      &--middle{
+        line-height: 0.5;
+        margin-left: 60px !important;
+      }
+      &--blue{
+          font-size: 35px !important;
+          line-height: 1.3;
+          margin-left: 120px !important;
+      }
+    }
+  }  
+  .contents-25-icon {
         width: 10%;
     }
 }
