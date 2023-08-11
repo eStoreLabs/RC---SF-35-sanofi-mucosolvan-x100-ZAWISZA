@@ -795,6 +795,11 @@ $text-black: #000;
     &__badge {
       left: -30px !important;
     }
+    &__articles {
+      &:hover {
+        background-color: $text-black !important;
+      }
+    }
   }  
   .contents-25-icon {
         width: 10%;
