@@ -368,6 +368,23 @@ $text-black: #000;
       background-color: $secondary-color;
     }
   }
+  .es-footer {
+    background-image: url('../images/description-bg.png');
+    &__text {
+      color: $text !important;
+      &--1{
+        font-size: 14px !important;
+      }
+      &--2{
+        font-size: 14px !important;
+        font-weight: 700;
+      }
+      &--3{
+        font-size: 32px !important;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 .contents-25-icon {
