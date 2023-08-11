@@ -55,6 +55,9 @@ $text-black: #000;
   overflow: hidden;
   // color: $text;
   background: #1f57a4;
+  .es-mobile-break {
+    display: block;
+  }
   .es-kv {
     min-height: 400px;
     &__container {
@@ -185,7 +188,7 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-1.5deg);
       margin: 0 auto 10px !important;
-      font-size: 40px;
+      font-size: 30px;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
@@ -194,7 +197,7 @@ $text-black: #000;
           letter-spacing: 1px;
       }
       &--blue{
-        font-size: 30px;
+        font-size: 25px;
         background-color: $main-color;
         transform: rotate(-3deg);
         line-height: 1.3;
@@ -250,10 +253,10 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin: 0 auto 10px !important;
-      font-size: 35px;
+      font-size: 20px;
       border-radius: 5px;
       font-family: $title;
-      line-height: 0.5;
+      line-height: 1.1;
       p{
           // margin: 10px;
           letter-spacing: 1px;
@@ -273,8 +276,8 @@ $text-black: #000;
       }
       &--3 {
         position: relative; 
-        left: 15%;
-        font-size: 45px !important;
+        left: 13%;
+        font-size: 25px;
         transform: rotate(-1.5deg);
         line-height: 1.3;
       }
@@ -367,7 +370,7 @@ $text-black: #000;
         line-height: 1.3;
       }
       &--2 {
-        font-size: 45px !important;
+        font-size: 40px;
         transform: rotate(-1.5deg);
         line-height: 0.5;
       }
@@ -390,7 +393,7 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin: 0 auto 10px !important;
-      font-size: 40px;
+      font-size: 25px;
       border-radius: 5px;
       font-family: $title;
       line-height: 1.3;
@@ -541,6 +544,14 @@ $text-black: #000;
       }
     }
   } 
+  .es-description {
+    &__text {
+      font-size: 40px !important;
+      &--blue {
+        font-size: 30px !important;
+      }
+    }
+  }
 }
 
 @media (min-width:768px) {
@@ -586,9 +597,28 @@ $text-black: #000;
       }
     }
   } 
+  .es-why {
+    &__text {
+      font-size: 35px !important;
+      &--1 {
+
+      }
+      &--3 {
+        font-size: 45px !important;
+      }
+    }
+  }
+  .es-articles {
+    &__text {
+      font-size: 40px !important;
+    }
+  }
 }
 
 @media (min-width:992px) {
+  .es-mobile-break {
+    display: none !important;
+  }
   .es-kv {
     &__title {
       top: 30px;
