@@ -54,6 +54,16 @@ body {
    
   }
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
 $regular: 'Monsterat, sans-serif';
 $title: 'MuseoSans';
 $main-color: #004999;
@@ -86,17 +96,12 @@ $text-black: #000;
   .es-image-box {
     overflow: hidden;
   }
-  .es-zoomin {
-    opacity: 1;
-    transition: 0.3s;
-    &:hover {
-      opacity: 1;
-      transform: scale(1.1);
-    }
+  .es-caught {
+    animation: fade 1s infinite;
   }
 
   .es-kv {
-    min-height: 400px;
+    min-height: 350px;
     &__container {
       padding: 0 !important;
     }
@@ -104,7 +109,6 @@ $text-black: #000;
       position: absolute;
       top: 30px;
       left: 30px;
-      animation: slideleft 1s ease forwards;
     }
     &__text{
       color: $text;
@@ -144,7 +148,6 @@ $text-black: #000;
       position: absolute;
       bottom: -30%;
       right: 5%;
-      animation: slideright 1s ease forwards;
     }
     &__background {
       width: 100%;
@@ -156,7 +159,6 @@ $text-black: #000;
       position: absolute;
       bottom:-29%;
       left: 15%;
-      animation: slideleft 1s ease forwards;
     }
     &__text1{
       color: $text;
@@ -248,15 +250,15 @@ $text-black: #000;
       &--middle{
         line-height: 0.8;
         position: relative;
-        left: 40px;
+        left: 30px;
       }
     }
     &__text1 {
-      font-size: 18px !important;
+      font-size: 20px !important;
       color: $text !important;
     }
     &__text2 {
-      font-size: 24px !important;
+      font-size: 26px !important;
       color: $text !important;
       text-shadow: 0px 0px 50px $main-color !important;
     }
@@ -318,7 +320,7 @@ $text-black: #000;
       }
       &--3 {
         position: relative; 
-        left: 13%;
+        left: 10%;
         font-size: 25px;
         transform: rotate(-1.5deg);
         line-height: 1.3;
@@ -341,6 +343,7 @@ $text-black: #000;
     &__box {
       padding: 0 !important;
       background-color: $main-dark;
+      border-radius: 15px;
     }
     &__subtitle {
       color: $text !important;
@@ -359,8 +362,13 @@ $text-black: #000;
     }
     & td {
       color: $text;
+      font-size: 20px !important;
       text-align: left;
       border:none;
+      & span {
+        font-size: 26px !important;
+        font-weight: 500;
+      }
     }
   } 
   .es-video {
@@ -395,7 +403,7 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin: 0 auto 10px !important;
-      font-size: 35px;
+      font-size: 32px;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
@@ -410,11 +418,11 @@ $text-black: #000;
       }
       &--1 {
         position: relative;
-        left: -15%;
+        left: -25%;
         line-height: 1.3;
       }
       &--2 {
-        font-size: 40px;
+        font-size: 35px;
         transform: rotate(-1.5deg);
         line-height: 0.5;
       }
@@ -438,7 +446,7 @@ $text-black: #000;
       font-weight: 900;
       transform: rotate(-3deg);
       margin: 0 auto 10px !important;
-      font-size: 25px;
+      font-size: 24px;
       border-radius: 5px;
       font-family: $title;
       line-height: 1.3;
@@ -455,7 +463,7 @@ $text-black: #000;
       width: max-content;
       text-align: left;
       font-size: 20px;
-      animation: slideleft 1s ease forwards;
+      // animation: slideleft 1s ease forwards;
       font-family: $title;
       & span {
         line-height: 1.3;
@@ -467,7 +475,8 @@ $text-black: #000;
       
     }
     &__head {
-      font-size: 18px !important;
+      font-family: $title;
+      font-size: 26px !important;
       font-weight: 900;
     }
     & table {
@@ -482,7 +491,7 @@ $text-black: #000;
     & td, th {
       min-width: 200px;
       color: $text;
-      font-size: 14px !important;
+      font-size: 16px !important;
     }
   }
   .es-articles {
@@ -512,16 +521,17 @@ $text-black: #000;
       }
     }
     &__text1 {
-      font-size: 18px !important;
+      font-size: 20px !important;
+      font-weight: 300;
       color: $text-blue !important;
     }
     &__box {
 
     }
     &__subtitle {
-      font-size: 18px !important;
+      font-size: 20px !important;
       color: $text-blue !important;
-      font-weight: 500;
+      font-weight: 700;
     }
     &__button {
       text-decoration: none;
@@ -542,32 +552,28 @@ $text-black: #000;
     &__text {
       color: $text !important;
       &--1{
-        font-size: 14px !important;
+        font-size: 16px !important;
       }
       &--2{
-        font-size: 14px !important;
+        font-size: 16px !important;
         font-weight: 700;
       }
       &--3{
-        font-size: 32px !important;
+        font-size: 38px !important;
         font-weight: 700;
       }
     }
   }
 }
 
-.contents-25-icon {
-    display:block;
-    width: 50%;
-    padding:5%;
-    margin: 1em auto auto;
-    aspect-ratio: 1;
-    border-radius: 2000px;
+@media (min-width:400px) {
+  .es-kv {
+    min-height: 400px !important;
+  } 
 }
-
 @media (min-width:440px) {
   .es-kv {
-    min-height: 500px !important;
+    min-height: 420px !important;
     &__text{
       font-size: 25px !important;
       &--red{
@@ -609,7 +615,29 @@ $text-black: #000;
     }
   } 
 }
-
+@media (min-width:500px) {
+  .es-kv {
+    min-height: 470px !important;
+  } 
+}
+@media (min-width:540px) {
+  .es-kv {
+    min-height: 485px !important;
+  } 
+  .es-video {
+    &__text {
+      font-size: 38px !important;
+      &--2 {
+        font-size: 50px !important;
+      }
+    }
+  }
+  .es-cross {
+    &__text {
+      font-size: 38px !important;
+    }
+  }
+}
 @media (min-width:576px) {
   .es-kv {
     min-height: 500px !important;
@@ -662,7 +690,6 @@ $text-black: #000;
     }
   }
 }
-
 @media (min-width:768px) {
   .es-kv {
     min-height: 600px !important;
@@ -791,6 +818,13 @@ $text-black: #000;
       }
     }
   }
+  .es-video {
+    &__text {
+      &--1 {
+        left: -15% !important;
+      }
+    }
+  }
   .es-cross{
     &__badge {
       left: -30px !important;
@@ -800,8 +834,5 @@ $text-black: #000;
         background-color: $text-black !important;
       }
     }
-  }  
-  .contents-25-icon {
-        width: 10%;
-    }
+  } 
 }
