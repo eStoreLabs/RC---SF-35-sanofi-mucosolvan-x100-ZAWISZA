@@ -119,14 +119,14 @@ $text-black: #000;
       border-radius: 5px;
       font-family: $title;
       line-height: 0.8;
-      font-size: 20px;
+      font-size: 25px;
       p{
           // margin: 10px;
           letter-spacing: 1px;
       }
       &--red{
           background-color: $secondary-color;
-          font-size: 15px;
+          font-size: 20px;
           margin: 0;
           line-height: 1.3;
       }
@@ -173,7 +173,7 @@ $text-black: #000;
       & sup {
         font-size: 8px !important;
         position: relative;
-        top: -4px !important;
+        top: -4px;
       }
       & p {
           // margin: 10px;
@@ -613,16 +613,21 @@ $text-black: #000;
 @media (min-width:400px) {
   .es-kv {
     min-height: 400px !important;
+    &__text{
+      font-size: 27px !important;
+      &--red{
+          font-size: 22px !important;
+      }
+    }
   } 
 }
 @media (min-width:440px) {
   .es-kv {
     min-height: 420px !important;
     &__text{
-      font-size: 25px !important;
+      font-size: 31px !important;
       &--red{
-          font-size: 20px  !important;
-          margin: 0;
+          font-size: 26px  !important;
           line-height: 1.3;
       }
       &--middle{
@@ -643,7 +648,7 @@ $text-black: #000;
       line-height: 0.8;
       & sup {
         font-size: 10px !important;
-        top: -26px !important;
+        top: -10px !important;
       }
       &--red{
           font-size: 15px  !important;
@@ -662,6 +667,12 @@ $text-black: #000;
 @media (min-width:500px) {
   .es-kv {
     min-height: 470px !important;
+    &__text{
+      font-size: 39px !important;
+      &--red{
+          font-size: 34px !important;
+      }
+    }
   } 
 }
 @media (min-width:540px) {
@@ -685,22 +696,6 @@ $text-black: #000;
 @media (min-width:576px) {
   .es-kv {
     min-height: 500px !important;
-    &__text{
-      font-size: 25px !important;
-      &--red{
-          font-size: 20px  !important;
-          margin: 0;
-          line-height: 1.3;
-      }
-      &--middle{
-        line-height: 0.8;
-        margin-left: 5px;
-      }
-      &--blue{
-          line-height: 1.3;
-          margin-left: 20px;
-      }
-    }
     &__subtitle {
       bottom: -29% !important;
       left: 10% !important;
@@ -710,7 +705,7 @@ $text-black: #000;
       line-height: 0.8;
       & sup {
         font-size: 10px !important;
-        top: -26px !important;
+        top: -10px !important;
       }
       &--red{
           font-size: 15px  !important;
@@ -741,9 +736,9 @@ $text-black: #000;
   .es-kv {
     min-height: 600px !important;
     &__text{
-      font-size: 35px !important;
+      font-size: 60px !important;
       &--red{
-          font-size: 30px  !important;
+          font-size: 45px !important;
           margin: 0;
           line-height: 1.3;
       }
@@ -765,7 +760,7 @@ $text-black: #000;
       line-height: 0.8;
       & sup {
         font-size: 10px !important;
-        top: -26px !important;
+        top: -14px !important;
       }
       &--red{
           font-size: 20px  !important;
@@ -812,22 +807,7 @@ $text-black: #000;
       top: 30px;
       left: 30px;
     }
-    &__text{
-      font-size: 60px !important;
-      &--red{
-          font-size: 45px !important;
-          margin: 0;
-          line-height: 1.3;
-      }
-      &--middle{
-        line-height: 0.8;
-        margin-left: 5px;
-      }
-      &--blue{
-          line-height: 1.3;
-          margin-left: 20px;
-      }
-    }
+
     &__packshot {
       width: 280px  !important;
       bottom: 0  !important;
@@ -847,7 +827,7 @@ $text-black: #000;
       & sup {
         font-size: 12px !important;
         position: relative;
-        top: -26px !important;
+        top: -20px !important;
       }
       &--red{
           font-size: 35px !important;
