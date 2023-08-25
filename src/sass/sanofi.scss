@@ -951,6 +951,7 @@ $text-black: #000;
     display: none !important;
   }
   .es-kv {
+    min-height: 660px !important;
     &__title {
       top: 30px;
       left: 30px;
@@ -958,15 +959,15 @@ $text-black: #000;
 
     &__packshot {
       width: 280px  !important;
-      bottom: 0  !important;
+      bottom: -40px  !important;
       right: 5%  !important;
     }
     &__background {
-      bottom: 0 !important;
+      bottom: -40px !important;
       right: 0  !important;
     }
     &__subtitle {
-      bottom: 25px !important;
+      bottom: -20px !important;
       left: 80px !important;
     }
     &__text1{
