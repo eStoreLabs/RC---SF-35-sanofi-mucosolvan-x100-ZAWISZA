@@ -492,7 +492,7 @@ $text-black: #000;
     &__badge {
       position: absolute;
       top: 0;
-      left: -60px;
+      left: -50px;
       color: $text;
       width: max-content;
       text-align: left;
@@ -508,10 +508,46 @@ $text-black: #000;
       }
       
     }
+    &__emptyImage {
+      height: 248px;
+    }
+    &__left {
+      height: 404px;
+    }
+    &__row {
+      vertical-align: middle;
+      text-align: left !important;
+      padding-left: 15px !important;
+      font-family: $regular;
+      font-weight: 500;
+      color: $text;
+      font-size: 14px !important;
+      &--1 {
+        height: 82.5px;
+      }
+      &--2 {
+        height: 65px;
+      }
+      &--3 {
+        height: 41px;
+      }
+      &--4 {
+        height: 65px;
+      }
+      &--5 {
+        height: 41px;
+      }
+    }
     &__head {
       font-family: $title;
       font-size: 22px !important;
       font-weight: 900;
+    }
+    &__image {
+      max-height: 200px;
+      &--big {
+        max-height: 240px;
+      }
     }
     & table {
       padding: 0 !important;
@@ -522,12 +558,19 @@ $text-black: #000;
     & tbody {
       background: linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 100%);
     }
-    & td, th {
+    & td {
       font-family: $regular;
       min-width: 190px;
       color: $text;
       font-size: 16px !important;
       font-weight: 300;
+      & span {
+        font-weight: 700;
+      }
+    }
+    & th {
+      border: none !important;
+      min-width: 90px;
     }
   }
   .es-articles {
@@ -873,7 +916,6 @@ $text-black: #000;
     }
   }
 }
-
 @media (min-width:992px) {
   .es-mobile-break {
     display: none !important;
@@ -940,7 +982,10 @@ $text-black: #000;
   }
   .es-cross{
     &__badge {
-      left: -30px !important;
+      left: -50px !important;
+    }
+    &__left {
+      height: 380px !important;
     }
     &__articles {
       &:hover {
