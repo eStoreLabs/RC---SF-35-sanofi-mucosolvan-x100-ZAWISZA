@@ -970,7 +970,7 @@ $text-black: #000;
     display: none !important;
   }
   .es-kv {
-    min-height: 660px !important;
+    min-height: 680px !important;
     &__title {
       top: 30px;
       left: 30px;
@@ -978,15 +978,15 @@ $text-black: #000;
 
     &__packshot {
       width: 280px  !important;
-      bottom: -40px  !important;
+      bottom: -60px  !important;
       right: 5%  !important;
     }
     &__background {
-      bottom: -40px !important;
+      bottom: -60px !important;
       right: 0  !important;
     }
     &__subtitle {
-      bottom: -20px !important;
+      bottom: -40px !important;
       left: 80px !important;
     }
     &__text1{
