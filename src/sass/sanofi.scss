@@ -1050,3 +1050,16 @@ $text-black: #000;
     }
   } 
 }
+@media (min-width:1200px) {
+
+  .es-kv {
+
+
+    &__subtitle {
+      bottom: -20px !important;
+      left: 80px !important;
+    }
+
+  }
+
+}
