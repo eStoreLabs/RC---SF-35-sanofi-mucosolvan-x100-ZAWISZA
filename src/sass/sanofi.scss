@@ -325,6 +325,7 @@ $text-black: #000;
           letter-spacing: 1px;
       }
       &--red{
+        border-radius: 5px;
         color: $text;
         padding: 0 10px !important;
         background-color: $secondary-color;
