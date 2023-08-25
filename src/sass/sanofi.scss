@@ -99,9 +99,15 @@ $text-black: #000;
   }
 
   .es-kv {
-    min-height: 350px;
+    min-height: 370px;
     &__container {
       padding: 0 !important;
+    }
+    &__mobile {
+      display: block;
+    }
+    &__desktop {
+      display: none;
     }
     &__title {
       position: absolute;
@@ -144,18 +150,18 @@ $text-black: #000;
     &__packshot {
       width: 35%;
       position: absolute;
-      bottom: -30%;
+      bottom: -27%;
       right: 5%;
     }
     &__background {
       width: 100%;
       position: absolute;
-      bottom: -30%;
+      bottom: -27%;
       right: 0;
     }
     &__subtitle {
       position: absolute;
-      bottom:-29%;
+      bottom:-27%;
       left: 15%;
     }
     &__text1{
@@ -657,7 +663,7 @@ $text-black: #000;
 
 @media (min-width:400px) {
   .es-kv {
-    min-height: 400px !important;
+    min-height: 415px !important;
     &__text{
       font-size: 27px !important;
       &--red{
@@ -683,7 +689,7 @@ $text-black: #000;
 }
 @media (min-width:440px) {
   .es-kv {
-    min-height: 420px !important;
+    min-height: 470px !important;
     &__text{
       font-size: 31px !important;
       &--red{
@@ -700,7 +706,7 @@ $text-black: #000;
       }
     }
     &__subtitle {
-      bottom: -31% !important;
+      bottom: -27% !important;
       left: 10% !important;
     }
     &__text1{
@@ -741,7 +747,7 @@ $text-black: #000;
 }
 @media (min-width:500px) {
   .es-kv {
-    min-height: 470px !important;
+    min-height: 510px !important;
     &__text{
       font-size: 39px !important;
       &--red{
@@ -767,7 +773,11 @@ $text-black: #000;
 }
 @media (min-width:540px) {
   .es-kv {
-    min-height: 485px !important;
+    min-height: 570px !important;
+    &__subtitle {
+      bottom: -24% !important;
+      left: 10% !important;
+    }
   } 
   .es-why {
     &__text {
@@ -801,6 +811,25 @@ $text-black: #000;
 @media (min-width:576px) {
   .es-kv {
     min-height: 500px !important;
+    &__packshot {
+      width: 35% !important;
+      bottom: -30% !important;
+      right: 5%!important;
+    }
+    &__background {
+      bottom: -30% !important;
+      right: 0 !important;
+    }
+    &__subtitle {
+      bottom:-29% !important;
+      left: 15% !important;
+    }
+    &__mobile {
+      display: none !important;
+    }
+    &__desktop {
+      display: block !important;
+    }
     &__subtitle {
       bottom: -29% !important;
       left: 10% !important;
