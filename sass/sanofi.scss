@@ -101,7 +101,6 @@ $text-black: #000;
   }
 
   .es-kv {
-    min-height: 370px;
     &__container {
       padding: 0 !important;
     }
@@ -149,35 +148,25 @@ $text-black: #000;
           margin-left: 20px;
       }
     }
-    &__packshot {
-      width: 35%;
-      position: absolute;
-      bottom: -27%;
-      right: 5%;
-    }
-    &__background {
-      width: 100%;
-      position: absolute;
-      bottom: -27%;
-      right: 0;
-    }
+    
     &__subtitle {
       position: absolute;
-      bottom:-27%;
-      left: 15%;
+      bottom: 5%;
+      left: 5%;
     }
     &__text1{
       color: $text;
+      width: -moz-max-content;
       width: max-content;
-      padding: 0 10px !important;
+      padding: 0 5px !important;
       text-transform: uppercase;
       font-weight: 900;
       transform: rotate(-3deg);
-      margin-bottom: 10px !important;
+      margin-bottom: 5px !important;
       font-size: 15px;
-      border-radius: 5px;
+      border-radius: 2px;
       font-family: $title;
-      line-height: 0.8;
+
       & sup {
         font-size: 8px !important;
         position: relative;
@@ -191,7 +180,7 @@ $text-black: #000;
           background-color: $secondary-color;
           font-size: 12px;
           margin: 0;
-          line-height: 1.3;
+          line-height: 1.5;
       }
       &--middle{
         line-height: 0.5;
@@ -201,7 +190,7 @@ $text-black: #000;
           background-color: $main-color;
           transform: rotate(-1.5deg);
           font-size: 12px;
-          line-height: 1.3;
+          line-height: 1.5;
           margin-left: 40px;
       }
     }
@@ -713,7 +702,6 @@ $text-black: #000;
 
 @media (min-width:400px) {
   .es-kv {
-    min-height: 415px !important;
     &__text{
       font-size: 27px !important;
       &--red{
@@ -737,7 +725,6 @@ $text-black: #000;
 
 @media (min-width:440px) {
   .es-kv {
-    min-height: 470px !important;
     &__text{
       font-size: 31px !important;
       &--red{
@@ -753,10 +740,7 @@ $text-black: #000;
           margin-left: 20px;
       }
     }
-    &__subtitle {
-      bottom: -27% !important;
-      left: 10% !important;
-    }
+    
     &__text1{
       font-size: 20px  !important;
       line-height: 0.8;
@@ -791,7 +775,6 @@ $text-black: #000;
 }
 @media (min-width:500px) {
   .es-kv {
-    min-height: 510px !important;
     &__text{
       font-size: 39px !important;
       &--red{
@@ -812,13 +795,7 @@ $text-black: #000;
   }  
 }
 @media (min-width:540px) {
-  .es-kv {
-    min-height: 570px !important;
-    &__subtitle {
-      bottom: -24% !important;
-      left: 10% !important;
-    }
-  } 
+  
   .es-why {
     &__text {
       font-size: 35px !important;
@@ -846,30 +823,14 @@ $text-black: #000;
 }
 @media (min-width:576px) {
   .es-kv {
-    min-height: 500px !important;
-    &__packshot {
-      width: 35% !important;
-      bottom: -30% !important;
-      right: 5%!important;
-    }
-    &__background {
-      bottom: -30% !important;
-      right: 0 !important;
-    }
-    &__subtitle {
-      bottom:-29% !important;
-      left: 15% !important;
-    }
+    
     &__mobile {
       display: none !important;
     }
     &__desktop {
       display: block !important;
     }
-    &__subtitle {
-      bottom: -29% !important;
-      left: 10% !important;
-    }
+    
     &__text1{
       font-size: 20px  !important;
       line-height: 0.8;
@@ -919,7 +880,6 @@ $text-black: #000;
 }
 @media (min-width:768px) {
   .es-kv {
-    min-height: 600px !important;
     &__text{
       font-size: 60px !important;
       &--red{
@@ -936,10 +896,7 @@ $text-black: #000;
           margin-left: 20px;
       }
     }
-    &__subtitle {
-      bottom: -26% !important;
-      left: 15% !important;
-    }
+    
     &__text1{
       font-size: 25px  !important;
       line-height: 0.8;
@@ -988,24 +945,10 @@ $text-black: #000;
     display: none !important;
   }
   .es-kv {
-    min-height: 680px !important;
+    
     &__title {
       top: 30px;
       left: 30px;
-    }
-
-    &__packshot {
-      width: 280px  !important;
-      bottom: -60px  !important;
-      right: 5%  !important;
-    }
-    &__background {
-      bottom: -60px !important;
-      right: 0  !important;
-    }
-    &__subtitle {
-      bottom: -40px !important;
-      left: 80px !important;
     }
     &__text1{
       font-size: 45px !important;
@@ -1067,16 +1010,4 @@ $text-black: #000;
     }
   } 
 }
-@media (min-width:1200px) {
 
-  .es-kv {
-
-
-    &__subtitle {
-      bottom: -20px !important;
-      left: 80px !important;
-    }
-
-  }
-
-}
