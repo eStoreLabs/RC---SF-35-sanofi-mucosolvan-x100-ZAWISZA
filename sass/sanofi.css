@@ -349,6 +349,7 @@
 }
 #es-rc.es-rc .es-dose {
   background-color: #19428f;
+  line-height: normal;
 }
 #es-rc.es-rc .es-dose table {
   padding: 0 !important;

@@ -383,6 +383,7 @@ $text-black: #000;
   } 
   .es-dose {
     background-color: $text-blue;
+    line-height: normal;
     & table {
       padding: 0 !important;
       margin: 0 !important;
