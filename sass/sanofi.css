@@ -462,6 +462,7 @@
 }
 #es-rc.es-rc .es-cross {
   background-image: url("../images/description-bg.png");
+  background-position: right;
 }
 #es-rc.es-rc .es-cross__title {
   width: 100%;

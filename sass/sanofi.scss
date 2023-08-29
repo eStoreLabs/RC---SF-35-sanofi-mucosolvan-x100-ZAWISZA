@@ -494,7 +494,8 @@ $text-black: #000;
     }
   }
   .es-cross {
-    background-image: url('../images/description-bg.png');  
+    background-image: url('../images/description-bg.png');
+    background-position: right;
     &__title {
       width: 100%;
       text-align: center !important;
