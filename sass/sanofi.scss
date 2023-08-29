@@ -366,9 +366,7 @@ $text-black: #000;
         left: -30%;
         line-height: 0.6;
       }
-      &--2 {
-        
-      }
+
       &--3 {
         position: relative; 
         left: 5%;
@@ -654,9 +652,7 @@ $text-black: #000;
         font-size: 20px !important;
       }
     }
-    &__box {
-
-    }
+  
     &__subtitle {
       font-family: $regular;
       font-size: 20px !important;
@@ -716,15 +712,11 @@ $text-black: #000;
   .es-why {
     &__text {
       font-size: 25px !important;
-      &--1 {
-        // left: -30% !important;
-      }
+      
       &--3 {
         font-size: 30px !important;
         left: 3% !important;
-        &--sup {
-          // font-size: 29px !important;
-        }
+        
       }
     }
   }  
@@ -776,15 +768,11 @@ $text-black: #000;
   .es-why {
     &__text {
       font-size: 28px !important;
-      &--1 {
-        // left: -30% !important;
-      }
+      
       &--3 {
         font-size: 33px !important;
         left: 1% !important;
-        &--sup {
-          // font-size: 29px !important;
-        }
+        
       }
     }
   } 
@@ -802,15 +790,11 @@ $text-black: #000;
   .es-why {
     &__text {
       font-size: 30px !important;
-      &--1 {
-        // left: -30% !important;
-      }
+      
       &--3 {
         font-size: 35px !important;
         left: 1% !important;
-        &--sup {
-          // font-size: 29px !important;
-        }
+        
       }
     }
   }  
@@ -826,15 +810,11 @@ $text-black: #000;
   .es-why {
     &__text {
       font-size: 35px !important;
-      &--1 {
-        // left: -30% !important;
-      }
+      
       &--3 {
         font-size: 40px !important;
         left: 1% !important;
-        &--sup {
-          // font-size: 29px !important;
-        }
+        
       }
     }
   }  
