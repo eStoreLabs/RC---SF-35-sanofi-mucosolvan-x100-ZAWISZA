@@ -214,6 +214,14 @@
 #es-rc.es-rc .es-description {
   background-image: url("../images/description-bg.png");
 }
+#es-rc.es-rc .es-description__box {
+  height: 510px;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-description__box {
+    height: unset;
+  }
+}
 #es-rc.es-rc .es-description__title {
   width: 100%;
   text-align: center !important;

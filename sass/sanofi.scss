@@ -243,6 +243,12 @@ $text-black: #000;
   }
   .es-description {
     background-image: url('../images/description-bg.png');
+    &__box {
+      height: 510px;
+      @media (min-width: 992px) {
+        height: unset;
+      }
+    }
     &__title {
       width: 100%;
       text-align: center !important;
