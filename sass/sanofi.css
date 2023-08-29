@@ -175,17 +175,28 @@
   font-size: 15px !important;
   font-family: "MuseoSans";
   color: #19428f !important;
-  max-width: 210px !important;
+  line-height: normal;
   font-weight: 700 !important;
+  height: 3.6em;
+}
+@media (min-width: 381px) {
+  #es-rc.es-rc .es-features__title {
+    height: 2.6em;
+  }
 }
 @media (min-width: 576px) {
   #es-rc.es-rc .es-features__title {
     font-size: 22px !important;
   }
 }
-@media (min-width: 576px) {
-  #es-rc.es-rc .es-features .height {
-    height: 3.5em !important;
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-features__title {
+    height: 4.6em;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-features__title {
+    height: 3.6em;
   }
 }
 #es-rc.es-rc .es-features__desc {
@@ -193,7 +204,6 @@
   font-size: 11px !important;
   font-weight: 500;
   color: #000 !important;
-  max-width: 210px !important;
   line-height: normal;
 }
 @media (min-width: 576px) {
@@ -201,14 +211,16 @@
     font-size: 16px !important;
   }
 }
-#es-rc.es-rc .es-features__mobileDdivider {
-  display: none;
-}
-#es-rc.es-rc .es-features__divider {
-  display: none;
-}
 #es-rc.es-rc .es-description {
   background-image: url("../images/description-bg.png");
+}
+#es-rc.es-rc .es-description__box {
+  height: 510px;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-description__box {
+    height: unset;
+  }
 }
 #es-rc.es-rc .es-description__title {
   width: 100%;
@@ -337,6 +349,7 @@
 }
 #es-rc.es-rc .es-dose {
   background-color: #19428f;
+  line-height: normal;
 }
 #es-rc.es-rc .es-dose table {
   padding: 0 !important;
@@ -525,7 +538,12 @@
   height: 41px;
 }
 #es-rc.es-rc .es-cross__row--4 {
-  height: 65px;
+  height: 89px;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-cross__row--4 {
+    height: 65px;
+  }
 }
 #es-rc.es-rc .es-cross__row--5 {
   height: 41px;
@@ -669,11 +687,6 @@
   .es-why__text--3 {
     font-size: 30px !important;
     left: 3% !important;
-  }
-}
-@media (min-width: 424px) {
-  .es-features__mobileDdivider {
-    display: block !important;
   }
 }
 @media (min-width: 440px) {
@@ -881,9 +894,6 @@
     font-size: 20px;
     line-height: 1.3;
   }
-  .es-features__divider {
-    display: block !important;
-  }
   .es-why__text--1 {
     line-height: 0.5 !important;
   }
@@ -944,9 +954,6 @@
     font-size: 35px !important;
     line-height: 1.3;
     margin-left: 120px !important;
-  }
-  .es-features__divider {
-    display: none !important;
   }
   .es-why__text--1 {
     left: -35% !important;
