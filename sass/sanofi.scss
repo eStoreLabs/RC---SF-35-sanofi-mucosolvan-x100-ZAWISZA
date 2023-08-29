@@ -523,18 +523,17 @@ $text-black: #000;
     &__table {
       overflow: hidden;
     }
+  
     &__badge {
       position: absolute;
-      top: 20px;
-      left: 10px;
+      top: 1%;
+    left: 13%;
       color: $text;
       width: max-content;
       text-align: left;
       font-size: 20px;
-      // animation: slideleft 1s ease forwards;
       font-family: $title;
       padding: 0 0 0 10px !important;
-      background-color: $main-color;
       border-radius: 5px;
       & span {
         line-height: 1.3;
@@ -543,7 +542,12 @@ $text-black: #000;
         border-radius: 5px;
         margin-left: -10px !important;
       }
-      
+      @media (min-width: 768px) {
+        left: 7%;
+      }
+      @media (min-width: 992px) {
+        left: 10%;
+      }
     }
     &__emptyImage {
       height: 248px;
@@ -996,10 +1000,7 @@ $text-black: #000;
     &__table {
       overflow: visible !important;
     }
-    &__badge {
-      left: -55px !important;
-      background-color: transparent !important;
-    }
+    
     &__left {
       height: 380px !important;
     }
