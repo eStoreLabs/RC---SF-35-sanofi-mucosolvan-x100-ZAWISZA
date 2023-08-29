@@ -538,7 +538,12 @@
   height: 41px;
 }
 #es-rc.es-rc .es-cross__row--4 {
-  height: 65px;
+  height: 89px;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-cross__row--4 {
+    height: 65px;
+  }
 }
 #es-rc.es-rc .es-cross__row--5 {
   height: 41px;

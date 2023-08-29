@@ -570,7 +570,10 @@ $text-black: #000;
         height: 41px;
       }
       &--4 {
-        height: 65px;
+        height: 89px;
+        @media (min-width: 992px) {
+          height: 65px;
+        }
       }
       &--5 {
         height: 41px;
