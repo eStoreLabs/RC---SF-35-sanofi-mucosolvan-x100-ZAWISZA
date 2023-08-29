@@ -361,7 +361,7 @@
   font-size: 29px;
 }
 #es-rc.es-rc .es-dose {
-  background-color: #19428f;
+  background-color: #1f57a4;
   line-height: normal;
 }
 #es-rc.es-rc .es-dose table {
@@ -373,7 +373,7 @@
   background-color: #19428f !important;
 }
 #es-rc.es-rc .es-dose__even {
-  background-color: #1b4a97 !important;
+  background-color: rgba(31, 87, 164, 0.3764705882) !important;
 }
 #es-rc.es-rc .es-dose__box {
   padding: 0 !important;
@@ -414,6 +414,9 @@
   font-weight: 300;
   text-align: left;
   border: none;
+}
+#es-rc.es-rc .es-dose tbody {
+  height: 396px;
 }
 #es-rc.es-rc .es-video {
   margin: 0 auto 64px;

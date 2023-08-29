@@ -64,9 +64,10 @@ $title: 'MuseoSans';
 $main-color: #004999;
 $main-dark: #19428f;
 $main-light: #1b4a97;
+$main-light-60: #1f57a460;
 // $secondary-color: #e4022e;
 $secondary-color: #d32833;
-
+$bg-dose: #1f57a4;
 $text: #fff;
 $text-blue: #19428f;
 $text-black: #000;
@@ -388,7 +389,7 @@ $text-black: #000;
     }
   } 
   .es-dose {
-    background-color: $text-blue;
+    background-color: $bg-dose;
     line-height: normal;
     & table {
       padding: 0 !important;
@@ -399,7 +400,7 @@ $text-black: #000;
       background-color: $main-dark !important;
     }
     &__even {
-      background-color: $main-light !important;
+      background-color: $main-light-60 !important;
     }
     &__box {
       padding: 0 !important;
@@ -440,6 +441,9 @@ $text-black: #000;
       text-align: left;
       border:none;
 
+    }
+    & tbody {
+      height: 396px;
     }
   } 
   .es-video {
