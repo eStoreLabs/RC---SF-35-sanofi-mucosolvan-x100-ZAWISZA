@@ -228,7 +228,15 @@ $text-black: #000;
         height: 3.6em;
       }
       }
-
+    .title-top {
+      height: 2.6em;
+      @media (min-width: 768px) {
+        height: 4.6em;
+      }
+      @media (min-width: 992px) {
+        height: 3.6em;
+      }
+    }
     &__desc {
       font-family: $regular;
       font-size: 11px !important;
