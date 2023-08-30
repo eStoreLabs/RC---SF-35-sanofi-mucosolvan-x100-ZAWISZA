@@ -604,6 +604,9 @@ $text-black: #000;
       @media (min-width: 992px) {
         height: 400px;
       }
+      @supports (-webkit-touch-callout: none) {
+        height: 410px;
+      }
     }
 
     &__title {

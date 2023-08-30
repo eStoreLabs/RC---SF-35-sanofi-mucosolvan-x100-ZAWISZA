@@ -498,6 +498,11 @@
     height: 400px;
   }
 }
+@supports (-webkit-touch-callout: none) {
+  #es-rc.es-rc .es-cross__bg {
+    height: 410px;
+  }
+}
 #es-rc.es-rc .es-cross__title {
   width: 100%;
   text-align: center !important;
