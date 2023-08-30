@@ -632,9 +632,7 @@ $text-black: #000;
       }
     }
 
-    &__table {
-      //overflow: hidden;
-    }
+    
 
     table,
     thead,
@@ -642,8 +640,7 @@ $text-black: #000;
     tr,
     th,
     td {
-      //padding: 0 !important;
-      //margin: 0 !important;
+      
       box-sizing: border-box !important;
       border-collapse: collapse !important;
       border-spacing: unset !important;
@@ -652,11 +649,7 @@ $text-black: #000;
       border-width: 0px !important;
       border-style: solid !important;
     }
-    &__table {
-      //position: relative;
-      //z-index: 2;
-      //overflow-x: scroll;
-    }
+    
     &__badge {
       position: absolute;
       top: 22%;
@@ -691,9 +684,7 @@ $text-black: #000;
       display: block;
     }
 
-    &__left {
-      //height: 404px;
-    }
+    
 
     &__row {
       vertical-align: middle;
@@ -1296,9 +1287,7 @@ $text-black: #000;
       overflow: visible !important;
     }
 
-    &__left {
-      //height: 380px !important;
-    }
+    
 
     &__articles {
       &:hover {
