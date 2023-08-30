@@ -490,7 +490,7 @@
   left: 0;
   background: rgb(68, 152, 209);
   background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 27%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endColorstr="#1f57a4",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
   z-index: -1;
 }
 @media (min-width: 992px) {
@@ -533,10 +533,15 @@
   box-sizing: border-box !important;
   border-collapse: collapse !important;
   border-spacing: unset !important;
-  border-color: red !important;
+  border-color: transparent !important;
   border-bottom-width: 0px !important;
   border-width: 0px !important;
   border-style: solid !important;
+}
+#es-rc.es-rc .es-cross__emptyImage {
+  display: block;
+  height: 271px !important;
+  padding-top: 50px;
 }
 #es-rc.es-rc .es-cross__badge {
   position: absolute;
@@ -608,7 +613,7 @@
   font-weight: 900;
 }
 #es-rc.es-rc .es-cross__image {
-  padding-top: 30px;
+  padding-top: 50px;
   max-height: 200px;
 }
 #es-rc.es-rc .es-cross__image--big {
