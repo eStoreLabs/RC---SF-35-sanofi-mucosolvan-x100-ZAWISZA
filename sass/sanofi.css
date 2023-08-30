@@ -500,7 +500,7 @@
 }
 @supports (-webkit-touch-callout: none) {
   #es-rc.es-rc .es-cross__bg {
-    height: 410px;
+    height: 430px;
   }
 }
 #es-rc.es-rc .es-cross__title {
