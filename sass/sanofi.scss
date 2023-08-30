@@ -593,11 +593,11 @@ $text-black: #000;
       height: 410px;
       bottom: 0;
       left: 0;
-      background: rgb(68, 152, 209);
-      background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
+      background: rgb(68,152,209);
+background: -moz-linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
+background: -webkit-linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
+background: linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endColorstr="#1f57a4",GradientType=1);
       z-index: -1;
       @media (min-width: 992px) {
         height: 400px;
@@ -652,11 +652,11 @@ $text-black: #000;
     
     &__badge {
       position: absolute;
-      top: 22%;
-    left: 16%;
+      top: 0%;
+    left: 14%;
       color: $text;
       width: max-content;
-      text-align: left;
+      text-align: center;
       font-size: 20px;
       font-family: $title;
       padding: 0 0 0 10px !important;
@@ -670,21 +670,13 @@ $text-black: #000;
         margin-left: -10px !important;
       }
 
-      @media (min-width: 768px) {
-        left: 7%;
-      }
-
       @media (min-width: 992px) {
-        left: 10%;
+        left: -28%;
+    top: 13%;
+    text-align: left;
       }
+      
     }
-
-    &__emptyImage {
-      height: 248px !important;
-      display: block;
-    }
-
-    
 
     &__row {
       vertical-align: middle;
@@ -741,7 +733,7 @@ $text-black: #000;
     }
 
     &__image {
-      padding-top: 20px;
+      padding-top: 30px;
       max-height: 200px;
 
       &--big {
@@ -757,31 +749,14 @@ $text-black: #000;
 
     }
 
-    &thead {
-      height: 248px;
+    & thead {
+      height: 271px;
     }
 
     & tbody {
-
       height: 400px;
-      //position: relative;
       z-index: 2;
     }
-
-    // & tbody::before {
-    //   content: "";
-    //   display: block;
-    //   height: 100%;
-    //   width: 100%;
-    //   position: absolute;
-
-    //   z-index: -1;
-    //   background: rgb(68, 152, 209);
-    //   background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-    //   background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-    //   background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-    //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
-    // }
 
     & td {
       font-family: $regular;

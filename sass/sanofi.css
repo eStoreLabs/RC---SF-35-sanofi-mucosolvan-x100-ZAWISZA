@@ -489,8 +489,8 @@
   bottom: 0;
   left: 0;
   background: rgb(68, 152, 209);
-  background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
+  background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 27%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endColorstr="#1f57a4",GradientType=1);
   z-index: -1;
 }
 @media (min-width: 992px) {
@@ -540,12 +540,12 @@
 }
 #es-rc.es-rc .es-cross__badge {
   position: absolute;
-  top: 22%;
-  left: 16%;
+  top: 0%;
+  left: 14%;
   color: #fff;
   width: -moz-max-content;
   width: max-content;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   font-family: "MuseoSans";
   padding: 0 0 0 10px !important;
@@ -558,19 +558,12 @@
   border-radius: 5px;
   margin-left: -10px !important;
 }
-@media (min-width: 768px) {
-  #es-rc.es-rc .es-cross__badge {
-    left: 7%;
-  }
-}
 @media (min-width: 992px) {
   #es-rc.es-rc .es-cross__badge {
-    left: 10%;
+    left: -28%;
+    top: 13%;
+    text-align: left;
   }
-}
-#es-rc.es-rc .es-cross__emptyImage {
-  height: 248px !important;
-  display: block;
 }
 #es-rc.es-rc .es-cross__row {
   vertical-align: middle;
@@ -615,7 +608,7 @@
   font-weight: 900;
 }
 #es-rc.es-rc .es-cross__image {
-  padding-top: 20px;
+  padding-top: 30px;
   max-height: 200px;
 }
 #es-rc.es-rc .es-cross__image--big {
@@ -627,8 +620,8 @@
   border: none;
   border-color: transparent !important;
 }
-#es-rc.es-rc .es-crossthead {
-  height: 248px;
+#es-rc.es-rc .es-cross thead {
+  height: 271px;
 }
 #es-rc.es-rc .es-cross tbody {
   height: 400px;
