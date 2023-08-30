@@ -465,7 +465,7 @@ $text-black: #000;
       padding: 0 !important;
       background-color: $main-dark;
       border-radius: 15px;
-      
+
       @media (min-width: 992px) {
         height: 394px;
       }
@@ -587,22 +587,25 @@ $text-black: #000;
     background-position: right;
     position: relative;
     z-index: 0;
+
     &__bg {
       position: absolute;
       width: 100%;
       height: 410px;
       bottom: 0;
       left: 0;
-      background: rgb(68,152,209);
-background: -moz-linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
-background: -webkit-linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
-background: linear-gradient(180deg, rgba(68,152,209,1) 0%, rgba(31,87,164,1) 27%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endColorstr="#1f57a4",GradientType=1);
+      background: rgb(68, 152, 209);
+      background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 27%);
+      background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 27%);
+      background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 27%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
       z-index: -1;
+
       @media (min-width: 992px) {
         height: 400px;
       }
     }
+
     &__title {
       width: 100%;
       text-align: center !important;
@@ -632,7 +635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
       }
     }
 
-    
+
 
     table,
     thead,
@@ -640,20 +643,24 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
     tr,
     th,
     td {
-      
+
       box-sizing: border-box !important;
       border-collapse: collapse !important;
       border-spacing: unset !important;
-      border-color: red !important;
+      border-color: transparent !important;
       border-bottom-width: 0px !important;
       border-width: 0px !important;
       border-style: solid !important;
     }
-    
+    &__emptyImage {
+      display: block;
+      height: 271px!important;
+      padding-top: 50px;
+    }
     &__badge {
       position: absolute;
       top: 0%;
-    left: 14%;
+      left: 14%;
       color: $text;
       width: max-content;
       text-align: center;
@@ -672,10 +679,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
 
       @media (min-width: 992px) {
         left: -28%;
-    top: 13%;
-    text-align: left;
+        top: 13%;
+        text-align: left;
       }
-      
+
     }
 
     &__row {
@@ -733,12 +740,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
     }
 
     &__image {
-      padding-top: 30px;
+      padding-top: 50px;
       max-height: 200px;
 
       &--big {
         max-height: 240px;
       }
+
     }
 
     & table {
@@ -874,42 +882,43 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
     }
   }
 
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #D32833 #DEDEDF;
-}
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #D32833 #DEDEDF;
+  }
 
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-}
-*::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: #DEDEDF;
-}
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
 
-*::-webkit-scrollbar-track:hover {
-  background-color: #BBBBBC;
-}
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DEDEDF;
+  }
 
-*::-webkit-scrollbar-track:active {
-  background-color: #BBBBBC;
-}
+  *::-webkit-scrollbar-track:hover {
+    background-color: #BBBBBC;
+  }
 
-*::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #D32833;
-}
+  *::-webkit-scrollbar-track:active {
+    background-color: #BBBBBC;
+  }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #A72028;
-}
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #D32833;
+  }
 
-*::-webkit-scrollbar-thumb:active {
-  background-color: #A72028;
-}
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #A72028;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #A72028;
+  }
 
 
 }
@@ -1262,7 +1271,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1",endCo
       overflow: visible !important;
     }
 
-    
+
 
     &__articles {
       &:hover {
