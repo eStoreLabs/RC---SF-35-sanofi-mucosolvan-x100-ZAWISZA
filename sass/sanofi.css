@@ -479,6 +479,24 @@
 #es-rc.es-rc .es-cross {
   background-image: url("../images/description-bg.png");
   background-position: right;
+  position: relative;
+  z-index: 0;
+}
+#es-rc.es-rc .es-cross__bg {
+  position: absolute;
+  width: 100%;
+  height: 410px;
+  bottom: 0;
+  left: 0;
+  background: rgb(68, 152, 209);
+  background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-cross__bg {
+    height: 400px;
+  }
 }
 #es-rc.es-rc .es-cross__title {
   width: 100%;
@@ -506,9 +524,6 @@
 #es-rc.es-rc .es-cross__text p {
   letter-spacing: 1px;
 }
-#es-rc.es-rc .es-cross__table {
-  overflow: hidden;
-}
 #es-rc.es-rc .es-cross table,
 #es-rc.es-rc .es-cross thead,
 #es-rc.es-rc .es-cross tbody,
@@ -525,8 +540,8 @@
 }
 #es-rc.es-rc .es-cross__badge {
   position: absolute;
-  top: 1%;
-  left: 13%;
+  top: 22%;
+  left: 16%;
   color: #fff;
   width: -moz-max-content;
   width: max-content;
@@ -617,19 +632,7 @@
 }
 #es-rc.es-rc .es-cross tbody {
   height: 400px;
-  position: relative;
   z-index: 2;
-}
-#es-rc.es-rc .es-cross tbody::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  background: rgb(68, 152, 209);
-  background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
 }
 #es-rc.es-rc .es-cross td {
   font-family: "Montserrat";

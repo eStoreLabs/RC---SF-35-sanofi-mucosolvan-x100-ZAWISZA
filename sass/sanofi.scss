@@ -585,7 +585,24 @@ $text-black: #000;
   .es-cross {
     background-image: url('../images/description-bg.png');
     background-position: right;
-
+    position: relative;
+    z-index: 0;
+    &__bg {
+      position: absolute;
+      width: 100%;
+      height: 410px;
+      bottom: 0;
+      left: 0;
+      background: rgb(68, 152, 209);
+      background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+      background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
+      z-index: -1;
+      @media (min-width: 992px) {
+        height: 400px;
+      }
+    }
     &__title {
       width: 100%;
       text-align: center !important;
@@ -616,7 +633,7 @@ $text-black: #000;
     }
 
     &__table {
-      overflow: hidden;
+      //overflow: hidden;
     }
 
     table,
@@ -635,11 +652,15 @@ $text-black: #000;
       border-width: 0px !important;
       border-style: solid !important;
     }
-
+    &__table {
+      //position: relative;
+      //z-index: 2;
+      //overflow-x: scroll;
+    }
     &__badge {
       position: absolute;
-      top: 1%;
-      left: 13%;
+      top: 22%;
+    left: 16%;
       color: $text;
       width: max-content;
       text-align: left;
@@ -752,24 +773,24 @@ $text-black: #000;
     & tbody {
 
       height: 400px;
-      position: relative;
+      //position: relative;
       z-index: 2;
     }
 
-    & tbody::before {
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
+    // & tbody::before {
+    //   content: "";
+    //   display: block;
+    //   height: 100%;
+    //   width: 100%;
+    //   position: absolute;
 
-      z-index: -1;
-      background: rgb(68, 152, 209);
-      background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
-    }
+    //   z-index: -1;
+    //   background: rgb(68, 152, 209);
+    //   background: -moz-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+    //   background: -webkit-linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+    //   background: linear-gradient(180deg, rgba(68, 152, 209, 1) 0%, rgba(31, 87, 164, 1) 100%);
+    //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
+    // }
 
     & td {
       font-family: $regular;
