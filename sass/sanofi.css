@@ -43,6 +43,7 @@
 }
 
 #es-rc.es-rc {
+  container-name: richContent;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 300;
