@@ -149,7 +149,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 #es-rc.es-rc .es-kv__subtitle {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 5%;
 }
 #es-rc.es-rc .es-kv__text1 {
@@ -303,6 +303,13 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   font-size: 26px !important;
   color: #fff !important;
   text-shadow: 0px 0px 50px #004999 !important;
+  padding-top: 2rem!important;
+}
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-description__text2 {
+    /* font-size: 20px !important; */
+    padding-top: unset!important;
+  }
 }
 #es-rc.es-rc .es-description__text3 {
   font-family: "Montserrat";
@@ -352,7 +359,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 0 !important;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.2;
@@ -373,8 +380,8 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 #es-rc.es-rc .es-why__text--3 {
   position: relative;
-  left: 5%;
-  font-size: 25px;
+  left: -4%;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.3;
 }
@@ -485,7 +492,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 32px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 0.8;
@@ -505,7 +512,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 #es-rc.es-rc .es-video__text--2 {
   text-align: left;
-  font-size: 40px;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.1;
 }
@@ -553,7 +560,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
@@ -580,6 +587,14 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   display: block;
   height: 271px !important;
   padding-top: 50px;
+}
+#es-rc.es-rc .es-cross__table--titlerow {
+  height: 80px!important;
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-cross__table--titlerow {
+    height: 107px!important;
+  }
 }
 #es-rc.es-rc .es-cross__badge {
   position: absolute;
@@ -622,9 +637,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     padding-left: 32px !important;
   }
 }
-#es-rc.es-rc .es-cross__row--1 {
-  height: 82px;
-}
+
 #es-rc.es-rc .es-cross__row--2 {
   height: 64px;
 }
@@ -676,6 +689,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   color: #fff;
   font-size: 16px !important;
   font-weight: 300;
+  vertical-align: middle;
 }
 #es-rc.es-rc .es-cross td em {
   font-weight: 700;
@@ -701,7 +715,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
@@ -820,23 +834,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     left: 3% !important;
   }
 }
-@media (min-width: 440px) {
-  .es-kv__text {
-    font-size: 31px !important;
-  }
-  .es-kv__text--red {
-    font-size: 26px !important;
-    line-height: 1.3;
-  }
-  .es-kv__text--middle {
-    line-height: 0.8;
-    margin-left: 5px;
-  }
-  .es-kv__text--blue {
-    line-height: 1.3;
-    margin-left: 20px;
-  }
-  .es-kv__text1 {
+.es-kv__text1 {
     font-size: 20px !important;
     line-height: 0.8;
   }
@@ -855,6 +853,23 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     font-size: 15px;
     line-height: 1.3;
   }
+@media (min-width: 440px) {
+  .es-kv__text {
+    font-size: 31px !important;
+  }
+  .es-kv__text--red {
+    font-size: 26px !important;
+    line-height: 1.3;
+  }
+  .es-kv__text--middle {
+    line-height: 0.8;
+    margin-left: 5px;
+  }
+  .es-kv__text--blue {
+    line-height: 1.3;
+    margin-left: 20px;
+  }
+  
   .es-why__text {
     font-size: 28px !important;
   }
