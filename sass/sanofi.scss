@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+  src: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/fonts/Montserrat-Regular.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "MuseoSans";
-  src: url("../fonts/MuseoSans-900.otf") format("opentype");
+  src: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/fonts/MuseoSans-900.otf") format("opentype");
 }
 
 
@@ -279,7 +279,7 @@ $text-black: #000;
   }
 
   .es-description {
-    background-image: url('../images/description-bg.png');
+    background-image: url('https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/images/description-bg.png');
     background-size: cover;
     background-position: 64%;
 
@@ -377,7 +377,7 @@ $text-black: #000;
 
     &__boxSubtitle {
       width: 500px !important;
-      background-image: url('../images/description-subtitle-bg.png');
+      background-image: url('https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/images/description-subtitle-bg.png');
       background-size: 500px 190px !important;
       background-repeat: no-repeat;
       background-position: center center;
@@ -585,7 +585,7 @@ $text-black: #000;
   }
 
   .es-cross {
-    background-image: url('../images/description-bg.png');
+    background-image: url('https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/images/description-bg.png');
     background-position: right;
     position: relative;
     z-index: 0;
@@ -863,7 +863,7 @@ $text-black: #000;
   }
 
   .es-footer {
-    background-image: url('../images/description-bg.png');
+    background-image: url('https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/RC---SF-35-sanofi-mucosolvan-x100-ZAWISZA/images/description-bg.png');
 
     &__text {
       font-family: $regular;
