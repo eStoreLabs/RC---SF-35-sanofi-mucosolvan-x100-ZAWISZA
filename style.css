@@ -526,18 +526,30 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   position: absolute;
   width: 100%;
   height: 410px;
-  bottom: 0;
+  top: 442px;
   left: 0;
   background: rgb(68, 152, 209);
   background: linear-gradient(180deg, rgb(68, 152, 209) 0%, rgb(31, 87, 164) 27%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4498d1", endColorstr="#1f57a4", GradientType=1);
   z-index: -1;
 }
-@media (min-width: 992px) {
+@media (min-width: 540px) {
   #es-rc.es-rc .es-cross__bg {
-    height: 400px;
+    top: 475px;
   }
 }
+@media (min-width: 768px) {
+  #es-rc.es-rc .es-cross__bg {
+    top: 481px;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc.es-rc .es-cross__bg {
+    top: 429px;
+    height: 425px;
+}
+}
+
 @supports (-webkit-touch-callout: none) {
   #es-rc.es-rc .es-cross__bg {
     height: 420px;
@@ -585,7 +597,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 #es-rc.es-rc .es-cross__emptyImage {
   display: block;
-  height: 271px !important;
+  height: 250px !important;
   padding-top: 50px;
 }
 #es-rc.es-rc .es-cross__table--titlerow {
@@ -637,7 +649,9 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     padding-left: 32px !important;
   }
 }
-
+#es-rc.es-rc .es-cross__row--1 {
+  height: 82px;
+}
 #es-rc.es-rc .es-cross__row--2 {
   height: 64px;
 }
@@ -677,11 +691,13 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
   border-color: transparent !important;
 }
 #es-rc.es-rc .es-cross thead {
-  height: 271px;
+  height: 271px !important;
+  overflow: hidden  !important;
+  z-index: -1  !important;
 }
 #es-rc.es-rc .es-cross tbody {
   height: 400px;
-  z-index: 2;
+  z-index: 2!important;
 }
 #es-rc.es-rc .es-cross td {
   font-family: "Montserrat";
@@ -697,6 +713,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 #es-rc.es-rc .es-cross th {
   border: none !important;
   min-width: 90px;
+  height: 271px !important;
 }
 #es-rc.es-rc .es-articles__title {
   width: 100%;
