@@ -253,7 +253,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 @media (min-width: 992px) {
   #es-rc.es-rc .es-description__box {
-    height: unset;
+    height: 404px;
   }
 }
 #es-rc.es-rc .es-description__title {
@@ -417,7 +417,7 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
 }
 @media (min-width: 992px) {
   #es-rc.es-rc .es-dose__box {
-    height: 394px;
+    height: 404px;
   }
 }
 #es-rc.es-rc .es-dose__subtitle {
