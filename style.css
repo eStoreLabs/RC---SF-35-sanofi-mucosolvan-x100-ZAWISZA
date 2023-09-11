@@ -1035,6 +1035,12 @@ dl,ol,p,pre,ul{margin-top:0;margin-bottom:1rem}address,dl,ol,p,pre,ul{margin-bot
     top: 30px;
     left: 30px;
   }
+  .es-kv__text {
+    font-size: 62px!important;
+  }
+  .es-kv__text--red {
+    font-size: 46px!important;
+  }
   .es-kv__text1 {
     font-size: 45px !important;
     line-height: 0.8;
